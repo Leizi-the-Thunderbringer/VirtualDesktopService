@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# 虚拟环境
+.venv/
+env/
+venv/
+
+# 编辑器配置
+.idea/
+.vscode/
+
+# 日志和数据库
+*.log
+*.sqlite3
+*.db
+
+# 单元测试
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+
+# 其他
+.DS_Store
+*.egg-info/
+dist/
+build/
