@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+wmi
+pyVmomi
+websockets
+aiohttp
+pydantic
