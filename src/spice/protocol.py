@@ -3,6 +3,8 @@ import struct
 from enum import IntEnum
 from dataclasses import dataclass
 from typing import Any, Tuple
+# SPICE 协议定义了一套用于虚拟机和客户端之间通信的消息格式和类型
+# 这里实现了基本的消息头结构和一些常用的消息类型
 
 # 协议常量
 class SpiceChannelType(IntEnum):

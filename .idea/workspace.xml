@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbc7c4ca-77ae-46bd-82f8-61c22d16fe10" name="更改" comment="update README.md to reflect project name change and clarify usage instructions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bbc7c4ca-77ae-46bd-82f8-61c22d16fe10" name="更改" comment="update vm_manager.py with comments for Hyper-V VM management and modify workspace.xml for README updates">
+      <change beforePath="$PROJECT_DIR$/src/spice/protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/spice/protocol.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +21,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Amiya167"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Leizi-the-Thunderbringer/VirtualDesktopService.git",
+    "accountId": "3d750296-a5b7-421a-97fc-1060868f890d"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -77,6 +90,7 @@
       <workItem from="1755830292112" duration="667000" />
       <workItem from="1755831592577" duration="26000" />
       <workItem from="1755831621750" duration="19000" />
+      <workItem from="1755831642562" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="add initial project configuration files and .gitignore">
       <option name="closed" value="true" />
@@ -110,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755787914330</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update vm_manager.py with comments for Hyper-V VM management and modify workspace.xml for README updates">
+      <option name="closed" value="true" />
+      <created>1755831781549</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755831781549</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +154,7 @@
     <MESSAGE value="add initial implementation of SPICE protocol and VM management CLI" />
     <MESSAGE value="add README.md for Hyper-V VM management CLI and SPICE protocol implementation" />
     <MESSAGE value="update README.md to reflect project name change and clarify usage instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md to reflect project name change and clarify usage instructions" />
+    <MESSAGE value="update vm_manager.py with comments for Hyper-V VM management and modify workspace.xml for README updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="update vm_manager.py with comments for Hyper-V VM management and modify workspace.xml for README updates" />
   </component>
 </project>
