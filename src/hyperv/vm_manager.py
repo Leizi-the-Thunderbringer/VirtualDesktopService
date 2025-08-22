@@ -1,6 +1,9 @@
 import argparse
 import subprocess
 import sys
+# Hyper-V 虚拟机管理器 (CLI)
+# 该脚本使用 PowerShell 命令来管理 Hyper-V 虚拟机
+
 
 class VMManager:
     def __init__(self):
