@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbc7c4ca-77ae-46bd-82f8-61c22d16fe10" name="更改" comment="update vm_manager.py with comments for Hyper-V VM management and modify workspace.xml for README updates">
-      <change beforePath="$PROJECT_DIR$/src/spice/protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/spice/protocol.py" afterDir="false" />
+    <list default="true" id="bbc7c4ca-77ae-46bd-82f8-61c22d16fe10" name="更改" comment="add basic message structure and types for SPICE protocol in protocol.py">
+      <change afterPath="$PROJECT_DIR$/src/webserver/flask_web.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/setupProxy.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,22 +47,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "ts.external.directory.path": "/Users/logos/VirtualDesktopService/src/webui/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -90,7 +92,7 @@
       <workItem from="1755830292112" duration="667000" />
       <workItem from="1755831592577" duration="26000" />
       <workItem from="1755831621750" duration="19000" />
-      <workItem from="1755831642562" duration="734000" />
+      <workItem from="1755831642562" duration="3461000" />
     </task>
     <task id="LOCAL-00001" summary="add initial project configuration files and .gitignore">
       <option name="closed" value="true" />
@@ -132,7 +134,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755831781549</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update vm_manager.py with comments for Hyper-V VM management and modify workspace.xml for README updates">
+      <option name="closed" value="true" />
+      <created>1755832385704</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1755832385704</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add basic message structure and types for SPICE protocol in protocol.py">
+      <option name="closed" value="true" />
+      <created>1755832412182</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1755832412182</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +173,7 @@
     <MESSAGE value="add README.md for Hyper-V VM management CLI and SPICE protocol implementation" />
     <MESSAGE value="update README.md to reflect project name change and clarify usage instructions" />
     <MESSAGE value="update vm_manager.py with comments for Hyper-V VM management and modify workspace.xml for README updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="update vm_manager.py with comments for Hyper-V VM management and modify workspace.xml for README updates" />
+    <MESSAGE value="add basic message structure and types for SPICE protocol in protocol.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add basic message structure and types for SPICE protocol in protocol.py" />
   </component>
 </project>
