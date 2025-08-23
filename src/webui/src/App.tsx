@@ -30,13 +30,20 @@ const theme = createTheme({
 function LoginDialog({ open, onLogin }: { open: boolean, onLogin: (token: string, user: any) => void }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [adServer, setAdServer] = useState('');
+  const [adDomain, setAdDomain] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
   const handleLogin = async () => {
     setLoading(true);
     try {
-      const res = await axios.post('/api/login', { username, password });
+      const res = await axios.post('/api/login', {
+        username,
+        password,
+        ad_server: adServer,
+        ad_domain: adDomain
+      });
       onLogin(res.data.token, res.data);
     } catch (e: any) {
       setError(e?.response?.data?.error || '登录失败');
@@ -51,6 +58,8 @@ function LoginDialog({ open, onLogin }: { open: boolean, onLogin: (token: string
         <Stack spacing={2} mt={1}>
           <TextField label="用户名" value={username} onChange={e => setUsername(e.target.value)} autoFocus />
           <TextField label="密码" type="password" value={password} onChange={e => setPassword(e.target.value)} />
+          <TextField label="AD服务器地址（可选）" value={adServer} onChange={e => setAdServer(e.target.value)} />
+          <TextField label="AD域名（可选）" value={adDomain} onChange={e => setAdDomain(e.target.value)} />
         </Stack>
       </DialogContent>
       <DialogActions>

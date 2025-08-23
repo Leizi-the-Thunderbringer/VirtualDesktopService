@@ -140,6 +140,8 @@ def login():
     data = request.json
     username = data.get('username')
     password = data.get('password')
+    ad_server = data.get('ad_server')
+    ad_domain = data.get('ad_domain')
     # 本地用户
     user = users.get(username)
     if user and user['password'] == password:
@@ -147,19 +149,20 @@ def login():
         sessions[token] = user
         return jsonify({'token': token, 'username': username, 'roles': user['roles']})
     # AD认证
-    try:
-        import ldap3
-        server = ldap3.Server('ldap://your-ad-server')
-        conn = ldap3.Connection(server, user=f'{username}@yourdomain.com', password=password)
-        if conn.bind():
-            # AD用户自动同步到本地
-            if username not in users:
-                users[username] = {'username': username, 'password': '', 'roles': ['user']}
-            token = str(uuid.uuid4())
-            sessions[token] = users[username]
-            return jsonify({'token': token, 'username': username, 'roles': users[username]['roles']})
-    except Exception as e:
-        pass
+    if ad_server and ad_domain:
+        try:
+            import ldap3
+            server = ldap3.Server(ad_server)
+            conn = ldap3.Connection(server, user=f'{username}@{ad_domain}', password=password)
+            if conn.bind():
+                # AD用户自动同步到本地
+                if username not in users:
+                    users[username] = {'username': username, 'password': '', 'roles': ['user']}
+                token = str(uuid.uuid4())
+                sessions[token] = users[username]
+                return jsonify({'token': token, 'username': username, 'roles': users[username]['roles']})
+        except Exception as e:
+            pass
     return jsonify({'error': 'invalid credentials'}), 401
 
 @app.route('/api/userinfo', methods=['GET'])
